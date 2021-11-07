@@ -5,8 +5,7 @@
             <p class="_detailsPage_des">{{ dataList.description }}</p>
 
             <div class="_detailsPage_pic">
-                <!-- <img class="_detailsPage_img" src="/img/LWN021-1.jpg" alt="" title=""> -->
-                <img class="_detailsPage_img" :src="dataList.image" alt="" title="">
+                <img class="_detailsPage_img" v-lazy="dataList.image" alt="" title="">
             </div>
 
             <h1 class="_detailsPage_subTitle">attributes</h1>

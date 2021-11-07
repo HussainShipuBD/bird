@@ -28,16 +28,6 @@ class Usercontroller extends Controller
         return view('main');
     }
 
-   
-
-
-    // Get admin
-    public function getAdmin()
-    {
-        $userType =  'user';
-        return User::where('userType', '!=', $userType)->orderBy('id', 'desc')->get();
-    }
-
     // Get bird
     public function getBird(Request $request){
         $str = isset($request->str) ? $request->str : '';
@@ -49,36 +39,11 @@ class Usercontroller extends Controller
         return $q->paginate(50, ["*"], 'page', $page);
     }
 
-
      // Get bird details
      public function getBirdDetails($key){
         $data = Gallery::where('id', $key)->first();
         $name =  $data->name;
         return Gallery::with('attributes')->where('name', $name)->first();
      }
-
-    // Get driver
-    public function getDriver(Request $request)
-    {
-        // return Driver::orderBy('id', 'desc')->get();
-        $str = isset($request->str) ? $request->str : '';
-        // $str = $data['str'];
-        $q = Driver::orderBy('id', 'desc');
-        if ($str) {
-            $q->where('name', 'like', "%$str%");
-            $q->orWhere('phone', 'like', "%$str%");
-        }
-        return $q->get();
-    }
-
-
-    // Get driver transition
-    public function getDriverTra($key)
-    {
-        return Drivertra::orderBy('id', 'desc')
-            ->where('driver_id', $key)
-            ->get();
-    }
-
   
 }

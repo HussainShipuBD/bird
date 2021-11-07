@@ -15,8 +15,6 @@
                         <!-- Item -->
                         <div class="_home_card" @click="$router.push('/birdDetails/' + item.id)" v-for="(item, index) in dataList.data" :key="index">
                             <div class="_home_card_pic">
-                                <!-- <img class="_home_card_img" src="https://gateway.pinata.cloud/ipfs/QmNX4R6sSzvULaFmVNmmdsnGSLcLVKvQsbKVS9WwAB4nwC/1.png" alt="" title=""> -->
-                                <!-- <img class="_home_card_img" :src="item.image" alt="" title=""> -->
                                 <img class="_home_card_img" v-lazy="item.image" alt="" title="">
                             </div>
 
