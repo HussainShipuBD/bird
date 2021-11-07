@@ -1,0 +1,339 @@
+/*-----------------------
+    1.Menu
+    2.Details page
+    ** Responsive **
+
+
+
+	
+-------------------------*/
+
+#main-wrapper{
+    width: 100%;
+    /* overflow: hidden; */
+    min-height: 100vh;
+}
+._main_layout {
+    transition: .2s all ease;
+    overflow: hidden;
+    min-height: calc(100vh - 85px);
+}
+._mini_main_layout {
+    margin-left: 80px;
+}
+._login_layout {
+    margin-left: 0px;
+    padding-top: 0px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    color: var(--color2);
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+body {
+    margin: 0px auto;
+    padding: 0px;
+    font-family:  sans-serif !important;
+    background-color: #000000 !important;
+    background: #000000 !important;
+    color: var(--color2) !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+a:hover{
+    text-decoration: none ;
+}
+pre, p{
+    margin:0px;
+    color: var(--color2);
+}
+h1{
+    font-size: 38px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 17px;
+}
+h1,h2,h3,h4, h5,h6{
+    margin: 0px;
+}
+ul{
+    padding: 0;
+    margin: 0px;
+}
+textarea {
+    resize: none !important;
+}
+button, select{
+    cursor: pointer;
+}
+button:focus, input:focus, select:focus, textarea:focus{
+    outline: none;
+}
+ul{
+	padding:0px;
+	margin:0px;
+}
+img{
+	width:100%;
+	display:block;
+}
+a:hover{
+    text-decoration: none;
+}
+a{
+    transition: .3s all ease;
+}
+
+/*======= 1.Home ======*/
+._menu{}
+._menu_logo {
+    text-align: center;
+    padding: 20px;
+}
+._menu_{}
+._menu_logo_img {
+    width: 150px;
+    margin: 0 auto;
+    display: inline-block;
+}
+._home{}
+._home_top{
+    padding: 0px 0px 30px;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+}
+._home_input{
+    flex: 0 0 250px;
+}
+._home_input .ivu-input {
+    padding: 4px 13px !important;
+    font-size: 14px !important;
+    border: 1px solid #222222 !important;
+    color: #ffffff !important;
+    background-color: transparent !important;
+}
+._home_input .ivu-input:focus {
+    border-color: #222222 !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgb(30 30 30 / 52%) !important;
+    box-shadow: 0 0 0 2px rgb(30 30 30 / 52%) !important;
+}
+.ivu-page-next, .ivu-page-prev {
+    background-color: transparent !important;
+}
+.ivu-page-item-jump-next,.ivu-page-item, .ivu-page-item-jump-prev, .ivu-page-next, .ivu-page-prev {
+    color: #fff !important;
+    font-family:  sans-serif !important;
+    border: 1px solid #222222 !important;
+    background-color: transparent !important;
+}
+.ivu-page-item-active {
+    border-color: #2d8cf0 !important;
+}
+._home_title {
+    flex: 1 1;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+._home_card_all{
+    padding: 30px 20px 50px;
+}
+._home_card_main{
+    margin: 0 auto;
+    max-width: 900px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+._home_card{
+    cursor: pointer;
+}
+._home_card_pic{
+    border-radius: 10px;
+    overflow: hidden;
+}
+._home_card_img{
+    width: 100%;
+    height: auto;
+}
+._home_card_details{
+    padding: 12px 0 0;
+}
+._home_card_title{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+._home_card_des{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 8px;
+    text-transform: uppercase;
+    line-height: 22px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+}
+._pagination{
+    margin-top: 50px;
+    text-align: center;
+}
+/*======= 1.Home end ======*/
+
+/*======= 2.Details page ======*/
+._detailsPage{
+    max-width: 550px;
+    padding: 30px 30px 50px;
+    margin: 0 auto;
+}
+._detailsPage_title{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+._detailsPage_des{
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+._detailsPage_pic{
+    margin-bottom: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+._detailsPage_img{
+    width: 100%;
+    height: auto;
+}
+._detailsPage_subTitle{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+._detailsPage_attr {
+    display: flex;
+    border-bottom: 1px solid #222222;
+    padding: 15px 20px;
+}
+._detailsPage_attr_th{
+    color: #dd6b20;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+._detailsPage_attr_th._one, ._detailsPage_attr_title._one{
+    flex: 0 0 170px;
+    overflow: hidden;
+}
+._detailsPage_attr_th._two, ._detailsPage_attr_val._two{
+    flex:1 1;
+    overflow: hidden;
+    padding-left: 10px;
+}
+._detailsPage_attr_title{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+._detailsPage_attr_val{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+._detailsPage_attr_main{}
+/*======= 2.Details page end ======*/
+
+/*======= ** Responsive ** ======*/
+/* Mobile */
+@media only screen and (max-width: 765px) {
+._menu_logo_img {
+    width: 97px;
+}
+._menu_logo {
+    padding: 20px 15px 0;
+}
+._detailsPage_des {
+    font-size: 15px;
+    line-height: 27px;
+}
+._detailsPage_attr_th._one, ._detailsPage_attr_title._one {
+    flex: 0 0 120px;
+}
+._detailsPage_attr_title {
+    font-size: 13px;
+}
+._detailsPage_attr_val {
+    font-size: 13px;
+}
+._detailsPage_attr {
+    padding: 13px 10px;
+}
+._detailsPage {
+    padding: 30px 15px 50px;
+}
+._home_card_all {
+    padding: 30px 15px 50px;
+}
+._home_card_main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+._home_top {
+   flex-wrap: wrap;
+}
+._home_title {
+    flex: 0 0 100%;
+    font-size: 20px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+._home_input {
+    flex: 0 0 100%;
+}
+}
+/* Mobile */
+
+/* Ipad */
+@media only screen and (min-width: 768px) and (max-width: 1050px) {}
+/* Ipad */
+
+/* Desktop 1366 */
+@media only screen and (max-width: 1500px) {
+
+    
+}
+/*======= ** Responsive ** ======*/
