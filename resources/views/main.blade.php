@@ -3,7 +3,7 @@
 <head>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/> 
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="/assets/images/fav/favicon.ico"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     
     <title>Bird</title>         
 

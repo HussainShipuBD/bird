@@ -275,6 +275,11 @@ a{
     text-transform: uppercase;
     font-weight: bold;
 }
+._detailsPage_attr_val span {
+    color: #dd6b20;
+    padding-left: 10px;
+    font-size: 17px;
+}
 ._detailsPage_attr_main{}
 /*======= 2.Details page end ======*/
 

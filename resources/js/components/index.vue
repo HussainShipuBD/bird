@@ -20,7 +20,7 @@
 
                             <div class="_home_card_details">
                                 <p class="_home_card_title">{{ item.name }}</p>
-                                <p class="_home_card_des">{{ item.description }}</p>
+                                <!-- <p class="_home_card_des">{{ item.description }}</p> -->
                             </div>
                         </div>
                         <!-- Item -->

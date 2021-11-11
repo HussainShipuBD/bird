@@ -19,7 +19,7 @@
                 <!-- Item -->
                 <div v-for="(item, index) in dataList.attributes" :key="index" class="_detailsPage_attr">
                     <p class="_detailsPage_attr_title _one">{{ item.trait_type }}</p>
-                    <p class="_detailsPage_attr_val _two">{{ item.value }}</p>
+                    <p class="_detailsPage_attr_val _two">{{ item.value }}  <span>{{ item.score }}</span></p>
                 </div>
                 <!-- Item -->
             </div>
