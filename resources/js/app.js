@@ -23,7 +23,7 @@ Vue.mixin(common)
 
 
 import iView from 'iview';
-import 'iview/dist/styles/iview.css';
+// import 'iview/dist/styles/iview.css';
 import locale from 'iview/dist/locale/en-US';
 Vue.use(iView, { locale });
 import Vue from 'vue';
